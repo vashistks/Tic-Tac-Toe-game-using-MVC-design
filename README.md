@@ -1,1 +1,1 @@
-Tic - Tac - Toe Game using MVD software pattern
+Tic - Tac - Toe Game using MVC software pattern
