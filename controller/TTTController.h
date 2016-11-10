@@ -11,14 +11,15 @@ class TTTController{
   string player[2];
   gameplay g1;
 public:
-  void createPlayer(string marker,int playerNum=1);
+  void createPlayer(string playerJsonObj);
   void startNewGame();
-  bool setSelection(int row,int col,int currentPlayer);
+  bool setSelection(string playerJsonObj);
+  string do_selection(string playerJsonObj);
   int determineWinner();
   string getGameDisplay();
   void displayboard();
   int currentPlayer();
-
-
+  string currentPlayerName();
+  string getAllSavedPlayers(string playerJsonObj);
 } ;
 #endif
